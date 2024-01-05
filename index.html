@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <h1 id="início">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#história">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura HTML"> Como é uma estrudura básica de um HTML</a></li>
+        <li><a href="#listas">Entendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referência</a></li>
+    </ul>
+    
+    <h2 id="história">História dos computadores</h2>
+    <small><a href="#início">(voltar)</a></small>
+
+    <p>O computador, tal qual conhecemos hoje, passou por diversas transformações e foi se aperfeiçoando ao longo do tempo, acompanhando o avanço das áreas da matemática, engenharia, eletrônica. É por isso que não existe somente um inventor.
+        De acordo com os sistemas e ferramentas utilizados, a história da computação está dividida em quatro períodos.</p>
+         
+        <ol style="font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <li><strong><i>Primeira Geração</i></strong></li>
+            <li><strong><i>Segunda Geração</i></strong></li>
+            <li><strong><i>Terceira Geração</i></strong></li>
+            <li><strong><i>Quarta Geração</i></strong></li>
+
+        </ol>
+        
+        <h3><i>Primeira Geração (1951-1959)</i></h3>
+
+        <p>Os computadores de <mark><strong>primeira geração</strong></mark> funcionavam por meio de circuitos e válvulas eletrônicas. Possuíam o uso restrito, além de serem imensos e consumirem muita energia.
+
+            Um exemplo é o ENIAC <i>(Eletronic Numerical Integrator and Computer)</i> que consumia cerca de 200 quilowatts e possuía 19.000 válvulas.</p>
+        
+        <h3><i>Segunda Geração (1959-1965)</i></h3>    
+
+        <p>Ainda com dimensões muito grandes, os computadores da <mark><strong>segunda geração</strong></mark> funcionavam por meio de transistores, os quais substituíram as válvulas que eram maiores e mais lentas. Nesse período já começam a se espalhar o uso comercial. </p>
+        
+        <h3><i>Terceira Geração (1965-1975)</i></h3>
+
+        <p>Os computadores da <mark><strong>terceira geração</strong></mark> funcionavam por circuitos integrados. Esses substituíram os transistores e já apresentavam uma dimensão menor e maior capacidade de processamento.
+
+            Foi nesse período que os chips foram criados e a utilização de computadores pessoais começou.</p>
+        
+        <h3><i>Quarta Geração (1975- até os dias atuais)</i></h3> 
+        
+        <p>Com o desenvolvimento da tecnologia da informação, os computadores diminuem de tamanho, aumentam a velocidade e capacidade de processamento de dados. São incluídos os microprocessadores com gasto cada vez menor de energia. Nesse período, mais precisamente a partir da década de 90, há uma grande expansão dos computadores pessoais.
+
+        </p>
+        <img src="https://static.todamateria.com.br/upload/co/mp/computadorquartageracao.jpg?auto_optimize=low" alt="">
+
+        <p>Além disso, surgem os softwares integrados e a partir da virada do milênio, começam a surgir os computadores de mão. Ou seja, os smartphones, iPod, iPad e tablets, que incluem conexão móvel com navegação na web.</p>
+        <img src="https://static.todamateria.com.br/upload/56/13/5613f67821641-historia-e-evolucao-dos-computadores.jpg?auto_optimize=low" alt="">
+       
+        <h2 id="clients">O que são clients</h2>
+    <small><a href="#início">(voltar)</a></small>
+        
+        <h4>O cliente é um computador que solicita esses serviços e recursos.</h4>
+
+        <h5>Cliente: Em uma infraestrutura cliente-servidor, cliente é um dispositivo de computação, como desktops, laptops, smartphones, tablets ou aplicativos que, através de protocolos de rede se conectam a servidores para fazer uma solicitação de serviço ou recurso e aguarda a resposta.</h5>
+        
+        <h2 id="servers">O que são servers</h2>
+    <small><a href="#início">(voltar)</a></small>
+        
+    <h4>Um servidor é um recurso dentro de um sistema computacional, capaz de processar aplicações, armazenar dados e prestar serviços.</h4>
+    
+    <h5>Servidor: Já o servidor é o componente do sistema que fornece os serviços ou recursos solicitados pelos clientes. Estes servidores podem ser um computador projetado especificamente para gerenciar e fornecer serviços aos clientes, ou ainda, um software que é executado em um servidor de rede.</h5>
+
+    <h2 id="estrutura HTML">Como é uma estrudura básica de um HTML</h2>
+    <small><a href="#início">(voltar)</a></small>
+    
+    <H6 style="background-color: cornflowerblue;">O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça</H6>
+    <P>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</P>
+    <ul>
+        <li>Definição do documento <sup>(doctype)</sup></li>
+        <li>Cabeça <sup>(head)</sup></li>
+        <li>Corpo <sup>(body)</sup></li>
+    </ul>
+       <h3><strong><i>Doctype - Definindo o documento</i></strong></h3>
+
+       <p>Uma coisa importante: SEMPRE deve existir o doctype.
+
+        O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+       
+        <h3><strong><i>HEAD</i></strong></h3>
+
+        <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</p>
+   
+        <h3><strong><i>BODY</i></strong></h3>
+
+        <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento.</p>
+        <p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.</p>
+        <p>Dentro do elemento BODY sua estrutura de <del>página</del> terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>   
+    
+        <h2 id="listas">Entendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <small><a href="#início">(voltar)</a></small>
+
+        <p>A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.</p>
+        
+        <p><blockquote><i>Uma lista ordenada é delimitada pelas etiquetas ol e ol Ordered List <abbr title="Ordered List">OL</abbr>. Cada item da lista é delimitado pelas etiquetas li e li (List Item).</i></blockquote></p>
+ 
+        <p><blockquote><i>A estrutura da lista não-ordenada é semelhante a da lista ordenada - porém, ao invés de ser construída com o elemento OL, é construída com o elemento UL (Unordered List).</i></blockquote></p>
+
+
+         <h2 id="links">Links de referência</h2>
+    <small><a href="#início">(voltar)</a></small>
+    <ul>
+        <li>
+        <a href="https://web.dio.me/lab/criar-uma-pagina-web-utilizando-as-tags-aprendidas/learning/fc56c26e-95a4-419d-a5bf-48826e676952" title="abrir" target="_blank">dio.me <sub>1</sub></a>
+        </li>
+        <li>
+         <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" title="abrir" target="_blank">Toda Matéria <sub>2</sub></a>
+        </li>
+        <li>
+        <a href="https://www.w3schools.com/" title="abrir"target="_blank">w3schools <sub>3</sub> </sub></a>
+        </li>
+
+    </ul>
+
+
+</body>
+</html>
